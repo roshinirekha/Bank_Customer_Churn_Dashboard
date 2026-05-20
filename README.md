@@ -103,7 +103,7 @@ The dashboard uses a structured data model with:
 ## Main Dashboard
 
 ![Dashboard Preview](Dashboard%201.png)
-![Dashboard Preview](Dashboard 2.png)
+![Dashboard Preview](Dashboard%202.png)
 ---
 
 # 🔍 Business Insights Generated
