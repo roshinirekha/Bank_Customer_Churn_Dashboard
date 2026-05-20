@@ -1,4 +1,4 @@
-# 🏦 Power BI Bank Customer Churn Dashboard
+# 🏦 Bank Customer Churn Dashboard Using Power BI
 
 ## Interactive Customer Churn Analysis Dashboard
 
