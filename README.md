@@ -108,10 +108,11 @@ The dashboard uses a structured data model with:
 
 # 🔍 Business Insights Generated
 
-- Customers with lower tenure show higher churn behavior
-- Certain salary/account balance groups have increased churn rate
-- Customers with fewer products tend to churn more
-- Credit score influences customer retention patterns
+- Customers with 3+ products show higher churn probability
+- Customers with lower credit scores are more likely to churn
+- High account balance customers contribute significantly to churn
+- Mid-tenure customers show relatively stable retention
+- Salary and balance segmentation helps identify churn-prone groups
 
 ---
 
