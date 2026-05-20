@@ -32,21 +32,30 @@ To create an interactive analytics dashboard that:
 
 ---
 
-## Core DAX Measures Implemented
-
 ## 🧮 Core DAX Measures Implemented
 
-- Total Customers = COUNT(Customer ID)
+- Total Customers = COUNT('Customer Data'[Customer ID])
 
-- Churned Customers = CALCULATE(COUNT(Customer ID), Churn Status = "Churned")
+- Churned Customers =
+  CALCULATE(
+  COUNT('Customer Data'[Customer ID]),
+  'Customer Data'[Customer Status] = "Churned"
+  )
 
-- Churn Rate % = DIVIDE([Churned Customers], [Total Customers]) * 100
+- Stayed Customers =
+  CALCULATE(
+  COUNT('Customer Data'[Customer ID]),
+  'Customer Data'[Customer Status] = "Not Churned"
+  )
 
-- Stayed Customers = CALCULATE(COUNT(Customer ID), Churn Status = "Not Churned")
+- Churn Rate % =
+  DIVIDE([Churned Customers], [Total Customers]) * 100
 
-- Average Account Balance = AVERAGE(Account Balance)
+- Average Account Balance =
+  AVERAGE('Customer Data'[Account Balance])
 
-- Average Credit Score = AVERAGE(Credit Score)
+- Average Credit Score =
+  AVERAGE('Customer Data'[Credit Score])
 
 - ### Customer Segmentation using calculated groups:
   - Age Groups
